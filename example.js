@@ -1,6 +1,6 @@
 const { PagesClient, Client } = require('./index');
 
-// new Client.Auth('ad7305074300db3a6306529ab99b5af2', 'logrsp')
+new Client.Auth('tokenhere', 'logrsp')
 
 console.log(Client, PagesClient, PagesClient.page)
 

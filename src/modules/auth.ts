@@ -1,18 +1,15 @@
-'use strict';
+import memory = require('quick.db');
+import axios from "axios";
+import { ClientAuthError } from "../utils/errors"
 
-const memory = require('quick.db');
-const axios = require('axios').default;
-const { ClientAuthError } = require('../util/errors')
-
-
-class Auth {
+export default class ClientAuth {
     /**
      * @typedef {String} AuthKey Your API key from https://instatus.com/app/developer
      * @param {AuthKey} AuthKey 
      * @param {any} opts Options. Vaild are: logRsp
      */
 
-    constructor(AuthKey, Opts) {
+    static sendAuth(AuthKey: String, Opts: String | undefined) {
         // perform test request on GET:Pages
         if (!AuthKey) return new ClientAuthError('Error: AuthKey is required');
         axios({
@@ -37,5 +34,3 @@ class Auth {
     }
 }
 
-
-module.exports = { Auth }

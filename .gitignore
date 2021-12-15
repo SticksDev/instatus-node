@@ -3,3 +3,4 @@ src/testingPlayground.ts
 build/
 json.sqlite
 coverage/
+testjs/

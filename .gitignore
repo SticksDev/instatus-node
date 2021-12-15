@@ -1,1 +1,5 @@
 node_modules
+src/testingPlayground.ts
+build/
+json.sqlite
+coverage/

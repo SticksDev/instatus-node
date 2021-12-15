@@ -1,0 +1,14 @@
+{
+    "include": ["src/**/*"],
+    "exclude": ["node_modules", "build", "src/testingPlayground.ts"],
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "sourceMap": true,
+        "outDir": "build",
+        "allowJs": false,
+        "allowUnreachableCode": false,
+        "pretty": true,
+        "alwaysStrict": true,
+    }
+}

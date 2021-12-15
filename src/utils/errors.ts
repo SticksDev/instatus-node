@@ -1,5 +1,5 @@
 export class ClientAuthError extends Error {
-    constructor(message: string ) {
+    constructor(message?: string ) {
         super(message);
 
         this.name = 'ClientAuthError'
@@ -7,7 +7,7 @@ export class ClientAuthError extends Error {
 }
 
 export class PagesClientError extends Error {
-    constructor(message: string ) {
+    constructor(message?: string ) {
         super(message);
 
         this.name = 'PagesClientError'

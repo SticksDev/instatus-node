@@ -22,6 +22,8 @@ export default class Client {
     
     static async pageRequest(request: String, Opts?: any) {
         switch(request) {
+            case "getAllAccountPages":
+                await PagesClient.getAllAccountPages()
             default:
                 new SyntaxError(`${request} is not a vaild typeof Client#pageRequest`)
                 break

@@ -8,5 +8,12 @@ describe("Client.pageRequest()", () => {
             expect(err).toEqual(`doesnotexist is not a vaild typeof Client#pageRequest`)
         })
     })
-}) 
+    it("should return a PagesClientError when no/invaild key is passed. (CASE_PagesClientError_NOKEY)", async () => {
+        await Client.resetAuthStore()
+        await Client.pageRequest('getAllAccountPages').catch(async (err) => {
+            await console.log(err.message)
+            expect(err).toEqual('Failed to get account pages. Ensure you have a key set before calling a pageRequest.')
+        })
+    })
+})
 

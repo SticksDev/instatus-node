@@ -9,6 +9,6 @@
         "allowJs": false,
         "allowUnreachableCode": false,
         "pretty": true,
-        "alwaysStrict": true
+        "alwaysStrict": true,
     }
 }

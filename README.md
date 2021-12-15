@@ -1,5 +1,5 @@
 
-![Logo](https://img.sticks.network/TOiwzb3N7)
+![Logo](https://img.sticks.network/FKgmj0plp)
 ![Build Status](https://app.travis-ci.com/Thatcooldevguy/instatus-node.svg?branch=main)
 
 ## Features

@@ -3,7 +3,9 @@ import ClientAuth from "./modules/auth"
 import PagesClient from "./modules/pages"
 import memory = require('quick.db');
 
-type LoginOps = "logrsp" | 'jestpromise';
+type LoginOps = "logrsp";
+type pageRequest = "getAllAccountPages"
+
 
 export default class Client {
 
@@ -20,7 +22,7 @@ export default class Client {
         memory.set('authkey', AuthKey)
     }
     
-    static async pageRequest(request: String, Opts?: any) {
+    static async pageRequest(request: pageRequest, Opts?: any) {
         switch(request) {
             case "getAllAccountPages":
                 await PagesClient.getAllAccountPages()

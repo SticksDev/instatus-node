@@ -14,6 +14,8 @@
 
 - [@thatcooldevguy](https://www.github.com/thatcooldevguy)
 
+- [@JacobSickels](https://github.com/JacobSickels) (Pro Test Writer)
+
 
 ## Contributing
 

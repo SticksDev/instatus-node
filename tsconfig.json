@@ -10,5 +10,6 @@
         "allowUnreachableCode": false,
         "pretty": true,
         "alwaysStrict": true,
+        "declaration": true
     }
 }

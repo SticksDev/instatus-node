@@ -2,12 +2,12 @@
 import ClientAuth from "./modules/auth"
 import PagesClient from "./modules/pages"
 
-type LoginOps = "logrsp";
+type LoginOps = "logrsp" | 'jestpromise';
 
 export default class Client {
 
-    static login(AuthKey: String, LoginOps?: LoginOps) {
-        ClientAuth.sendAuth(AuthKey, LoginOps)
+    static async login(AuthKey: String, LoginOps?: LoginOps) {
+        await ClientAuth.sendAuth(AuthKey, LoginOps)
     }
     
     static pageRequest(request: String, Opts?: any) {

@@ -1,6 +1,6 @@
 import Client from "./index"
 
-Client.login('test', undefined) // no options from login
+let auth = Client.login('test', undefined) // no options from login
 
-
+console.log(auth)
 
